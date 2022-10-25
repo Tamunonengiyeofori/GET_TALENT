@@ -1,0 +1,166 @@
+{% extends "home/index.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/recruit-info.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> 
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">  
+    <title>Personal Information</title>
+</head>
+<body>
+    <section>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+                <div class="container">
+                  <a class="navbar-brand me-5 pe-5" href="home.html"><img src="img/recruit-info-logo.png" alt="Logo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link ms-lg-4 mobile"  href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active ms-lg-4" aria-current="page" href="recruit.html">Recruits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-lg-2" href="about-us-logged-in.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-lg-2" href="contact-page-logged.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-lg-2" href="blog-login.html">Blog</a>
+                        </li>
+                        </ul>
+                        <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link me-lg-2" href="message.html">Message<i class="bi bi-chat-text-fill text-white ms-2"></i></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link me-lg-2" href="#">Notification<i class="bi bi-bell-fill text-white ms-2"></i></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link me-lg-2" href="profile-page.html">Profile<i class="bi bi-person-circle text-white ms-2"></i></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="sign-in.html">Logout<i class="bi bi-box-arrow-right text-white ms-2"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </nav>
+        </header>
+        {% block content %}
+                                <form action="" method="POST"> 
+                                    <div class="d-flex justify-content-between pb-3">
+                                        <div class="w-100 pe-2">
+                                            <label for="name" class="pb-1">Employer</label>
+                                            <input type="text" class="form-control bg-light">
+                                        </div>
+                                        <div class="w-100 ps-2">
+                                            <label for="position" class="pb-1">Position</label>
+                                            <input type="text" class="form-control bg-light">
+                                        </div>
+                                    </div>
+                                    <div class="pb-3">
+                                        <label for="name" class="pb-1">Description</label>
+                                        <div class="">
+                                            <textarea rows="7" class="w-100 p-2 bg-light"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center pb-3 fr-dir">
+                                        <a href="recruit-info.html" class="btn btn-dark w-100 mb-3 me-2 mr">Save Experience</a>
+                                        <a href="recruit-info.html" class="btn btn-outline-dark w-100 mb-3 ms-2 ml">Cancel</a>
+                                    </div>                                
+                                </form>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock content %}
+        <footer class="bg-footer">
+            <div class="container py-5">
+                <div class="row py-2">
+                    <div class="col-lg-8 col-md-8 col-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <p class="fw-bold text-light">Quick Links</p>
+                                <ul class="list-unstyled fw-bold">
+                                    <li class="mb-4">
+                                        <a class="text-decoration-none link-secondary" href="home.html">Home</a>
+                                    </li>
+                                   <li class="mb-4">
+                                        <a class="text-decoration-none link-secondary" href="about-us-logged-in.html">About Us</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a class="text-decoration-none link-secondary" href="blog-login.html">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <p class="fw-bold text-light">Policies</p>
+                                    <ul class="list-unstyled fs-14">
+                                        <li class="pb-2">
+                                            <a class="text-decoration-none link-secondary" href="#">Terms of service</a>
+                                        </li>
+                                        <li class="pb-2">
+                                            <a class="text-decoration-none link-secondary" href="#">Privacy policy</a>
+                                        </li>
+                                        <li class="pb-2">
+                                            <a class="text-decoration-none link-secondary" href="#">Recruitment terms</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <p class="fw-bold text-light">CONTACT US</p>
+                        <ul class="list-unstyled fs-14">
+                            <li>
+                                <div class="d-flex text-secondary">
+                                    <i class="bi bi-geo-alt-fill me-4"></i>
+                                    <p>38, Afaha Uqua Road, Eket, Akwa-Ibom State</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex text-secondary">
+                                    <i class="bi bi-telephone-fill me-4"></i>
+                                    <p>+234|812-8555-785</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex text-secondary">
+                                    <i class="bi bi-envelope-fill me-4"></i>
+                                    <p>kodecamp@gottalent.com</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <p class="fw-bold text-light me-4">Follow us</p>
+                            <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="me-3 text-decoration-none link-light"><i class="bi bi-instagram"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
